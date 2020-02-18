@@ -6,14 +6,14 @@ const Index = () => {
         { Name: 'Arima' },
     ])
     const [subtext, setSubtext] = useState('')
-    const click =(e)=>{
+    const Enter =(e)=>{
         e.preventDefault();
         setText([...text,{Name:subtext}])
     }
     return (
         <div>
             <div>
-                <form onSubmit={click}>
+                <form onSubmit={Enter}>
                     <input type="text" name="name"  onChange={(e)=>setSubtext(e.target.value)} />
                 </form>
             </div>
